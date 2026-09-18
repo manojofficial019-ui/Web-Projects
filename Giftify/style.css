@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 20px;
+    color: white;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height:auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subcontainer{
+    width: calc(25% - 40px);
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subcontainer button{
+    margin-top: auto;
+    padding: 12px 18px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.cart{
+    width: 420px;
+    min-height: 180px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.cart ul{
+    padding: 0;
+    list-style: none;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.qty-btn,
+.remove-btn{
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .subcontainer{
+        width: calc(50% - 40px);
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        padding: 10px;
+    }
+
+    .title{
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .subcontainer{
+        width: calc(100% - 40px);
+        height: 250px;
+        font-size: 32px;
+    }
+
+    .cart{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
